@@ -49,6 +49,7 @@ table {
 
 /* End Reset Styles */
 
+/* Show/Hide Sections with #fragment */
 
 section {
   padding: 3em 2em;
@@ -65,4 +66,26 @@ section:target {
 
 .hasjs section:target {
   display: block;
+}
+
+.navigation li {
+  background: green;
+}
+
+@media screen and (min-width: 350px) {
+  /* Navigation with Flexbox */
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #page {
+    margin: 0 auto;
+    width: 60%;
+  }
 }
